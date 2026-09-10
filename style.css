@@ -7,13 +7,15 @@
             display: flex;
             justify-content: space-between;
             background-color: black;
-            height: 90px;
+            height: 64px;
             /* padding : top right bottom left */
             padding: 0px 30px 0px 30px;
         }
         h1{
             color: white;
         }
+       
+        /* navigation */
         nav a{
             color: white;
             font-size: 24px;
@@ -27,3 +29,119 @@
         a:hover{
             color: red;
         }
+
+
+        .hero{
+            height: 90vh;
+            background: url("image/banner3.jpg") no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+        .hero button{
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover{
+            background: darkred;
+        }
+
+        /* video section */
+
+        .video-section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            gap: 40px;
+        }
+
+        /* take an equal share of available space */
+        .video-text{
+            flex: 1;
+        }
+        .video-box{
+            flex: 1;
+        }
+
+        .video-box video{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .video-text h2{
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .video-text p{
+            font-size: 20px;
+            color: #444;
+        }
+
+        /* about section */
+        .about{
+            text-align: center;
+            /* top bbottom left right */
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+        .about h2{
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: rgba(255, 0, 0, 0.615);
+        }
+        .about p{
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        /* footer */
+        footer{
+            background-color: black;
+            padding: 30px;
+        }
+        footer p{
+              color: rgb(190, 186, 186);
+        }
+        footer h3{
+            color: #f9f9f9;
+        }
+        footer .container{
+            display: flex;
+        }
+         .section1{
+            flex: 1;
+        }
+        .section2{
+            flex: 1;
+        }
+        .section3{
+            flex: 1;
+        }
+        .section4{
+            flex: 1;
+        }
+        footer h5{
+            color: rgb(190, 186, 186);
+            margin-top: 10px;
+        }
+        
+        footer h3{
+            margin-bottom: 10px;
+            
+        }
+        footer a{
+            color: whitesmoke;
+            text-decoration: none;
+              color: rgb(190, 186, 186);
+        }
+
