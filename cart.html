@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d66df2e6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <img src="image/logoBite.png" alt="" width="100px" height="70px" style="padding: 5px;">
+    <nav>
+         <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="bitedeals.html">BiteDeal</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+
+    </nav>
+    </header>
+    <!-- header End -->
+     <!-- start section -->
+      <section class="cart">
+        <h2 style="text-align: center;">Your Cart</h2>
+        <table>
+            <thead>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="item">
+                        <img src="image/burger-card1.png" alt="">
+                        <div>
+                            <h4>Cheese Burger</h4>
+                            <p>Juicy grilled burger</p>
+                        </div>
+                    </td>
+                    <td>₹199</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹199</td>
+                    <td><button class="remove">❌</button></td>
+                </tr>
+                <!-- 2nd tr -->
+                  <tr>
+                    <td class="item">
+                        <img src="image/burger-card1.png" alt="">
+                        <div>
+                            <h4>Capsicum Pizza</h4>
+                            <p>Loaded with cheese</p>
+                        </div>
+                    </td>
+                    <td>₹249</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹249</td>
+                    <td><button class="remove">❌</button></td>
+                </tr>
+                <!-- 3rd tr -->
+                  <tr>
+                    <td class="item">
+                        <img src="image/alfredo-card4.png" alt="">
+                        <div>
+                            <h4>Alfredo Pizza</h4>
+                            <p>Creamy white sauce</p>
+                        </div>
+                    </td>
+                    <td>₹229</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹229</td>
+                    <td><button class="remove"> ❌</button></td>
+                </tr>
+                <tr class="grand-total">
+                    <td colspan="3">Grand Total</td>
+                    <td>₹797</td>
+                    <td><button>Proceed</button></td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+      <!-- end section -->
+    
+</body>
+</html>

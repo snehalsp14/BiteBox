@@ -145,3 +145,349 @@
               color: rgb(190, 186, 186);
         }
 
+        .footer-bottom p {
+    margin: 0;
+    padding: 10px;
+    color: #cccccc;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+.category-icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+    background: #ffffff;
+    justify-content: center;
+}
+
+.icon-box{
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* object fit is mainly used with images and videowithout stretching or distorting */
+
+.icon-box img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;  
+    border-radius: 50%;
+    border: 2px solid #eeeeee;
+    padding: 5px;
+}
+
+.icon-box p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.icon-box img:hover{
+    margin-top: 8px;
+}
+
+.icon-box p:hover{
+    color:red
+}
+
+/* menu conatiner */
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px black;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+.card button{
+
+    background: red;
+    color: white;
+    border:none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.card button:hover{
+    background: darkred;
+}
+
+/* biteDeal page */
+.deals-page{
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+.deal-hero{
+     background: linear-gradient( 135deg ,rgb(0,0,0),#7b7b7b);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.deal-hero h1{
+   font-size: 40px;
+}
+.deal-hero p{
+    font-size: 18px;
+}
+
+/* combo css */
+.combo-section{
+    padding: 70px;
+    background: #fff;
+}
+.combo-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.combo-card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgb(0,0,0,1);
+    transition: 0.3s
+}
+.combo-card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.combo-card h4{
+    margin: 10px 0px;
+}
+
+.combo-card h4 span{
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+.combo-card button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.combo-card button:hover{
+    background: #cc0000;
+}
+.combo-card:hover{
+    transform: translateY(-8px)
+}
+.section-title{
+    margin: 30px  0px 20px;
+    font-size: 28px;
+    color: #000;
+}
+
+/* day wise offer css */
+.deals-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.deal-card{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgb(0,0,0,0.1);
+}
+.deal-card h3{
+    margin-bottom: 10px;
+}
+.deal-card span{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.deal-card:hover{
+    transform: translateY(-8px)
+}
+.red{
+    border-top: 5px solid red;
+}
+.yellow{
+    border-top: 5px solid yellow;
+}
+.green{
+    border-top: 5px solid green;
+}
+.blue{
+    border-top: 5px solid blue;
+}
+
+/* cart css table */
+table{
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+thead{
+    background:red;
+    color: white;
+}
+
+th,td{
+    padding: 15px;
+    text-align: center;
+}
+tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.item img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.remove{
+    background: red;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.remove:hover{
+    background: darkred;
+}
+.grand-total td{
+    font-weight: bold;
+    font-size: 18px;
+}
+.grand-total button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grand-total button:hover{
+    background: darkred;
+}
+
+.qty-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.qty-box button{
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: red;
+    color: white;
+    font: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.qty-box button:hover{
+    background: #cc0000;
+}
+
+.qty-box span{
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+/* signup */
+.auth-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg ,#000, #1c1c1c);
+}
+
+.auth-box{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 8px 30px  rgb(147, 131 ,101);
+}
+
+.auth-box h2{
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+.auth-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth-box input:focus{
+    border-color: red;
+}
+
+.auth-box button{
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.auth-box button:hover{
+    background-color: #f80202;
+}
+
+.auth-box p{
+    margin-top: 15px;
+    font-size: 14px ;
+}
+.auth-box a{
+    color:red;
+    text-decoration: none;
+}
+
+/* end signup */
+

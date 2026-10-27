@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+        <script src="https://kit.fontawesome.com/8d66df2e6f.js"
+        crossorigin="anonymous"></script>
+    </head>
+<body>
+
+     <!-- header start -->
+    <header>
+        <img src="image/logoBite.png" alt="" width="100px" height="70px" style="padding: 5px;">
+    <nav>
+         <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="bitedeals.html">BiteDeal</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+
+    </nav>
+    </header>
+    <!-- header End -->
+     <section class="auth-container">
+        <div class="auth-box">
+            <h2>Login to Bite <span>Box</span></h2>
+            <form action="">
+                <input type="email" placeholder="Enter Email" id="userEmail" required>
+                <div style="position: relative;">
+                    <input type="password" placeholder="Enter password" id="userPass" required>
+                    <span onclick="togglePassword()" style="position: absolute;right: 10px;top: 50%;transform: translateY(-50%);cursor: pointer;">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+                <button type="submit" onclick="loginFunction()">Login</button>
+            </form>
+            <br>
+            <p id ="error" style="color: darkred;"></p>
+            <br>
+            <a href="">Forget Pssword</a>
+            <p>Don't have an account <a href="signup.html">SignUp</a></p>
+        </div>
+      </section>
+    
+</body>
+</html>
